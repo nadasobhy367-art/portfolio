@@ -50,16 +50,18 @@ const projects = [
     {
         img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600",
         title: "La Fiesta Restaurant",
-        desc: "Professional restaurant landing page with interactive menu, gallery, and reservation form. Built with pure HTML, CSS & JavaScript with Arabic RTL support.",
+        desc: "Professional restaurant landing page with interactive menu, gallery, and reservation form.",
         tags: ["HTML", "CSS", "JavaScript", "Arabic RTL"],
-        details: "A fully responsive restaurant landing page featuring animated menu tabs, image gallery with lightbox, reservation form, and smooth scroll animations."
+        details: "A fully responsive restaurant landing page featuring animated menu tabs, image gallery with lightbox, reservation form, and smooth scroll animations.",
+        link: "https://nadasobhy367-art.github.io/restaurant-template"
     },
     {
         img: "https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600",
         title: "Dental Clinic",
         desc: "Complete dental clinic website with appointment booking, FAQ, price list and dark mode.",
         tags: ["HTML", "CSS", "JavaScript", "Responsive"],
-        details: "A professional dental clinic website with dark mode, animated counters, FAQ accordion, price list, Google Maps integration, and WhatsApp floating button."
+        details: "A professional dental clinic website with dark mode, animated counters, FAQ accordion, price list, Google Maps integration, and WhatsApp floating button.",
+        link: "https://nadasobhy367-art.github.io/dental-clinic"
     }
 ];
 
@@ -90,6 +92,7 @@ function openModal(index) {
     document.getElementById('modal-title').textContent = p.title;
     document.getElementById('modal-desc').textContent = p.details;
     document.getElementById('modal-tags').innerHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+    document.getElementById('modal-link').href = p.link;
     document.getElementById('modal').classList.add('open');
 }
 
@@ -141,7 +144,6 @@ document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el))
 window.addEventListener('scroll', () => {
     document.querySelector('.navbar').style.boxShadow =
         window.scrollY > 50 ? '0 5px 30px rgba(0,0,0,0.5)' : 'none';
-    // Progress Bar
     const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
     document.querySelector('.progress-bar').style.width = scrolled + '%';
 });
