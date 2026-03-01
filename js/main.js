@@ -32,7 +32,6 @@ function type() {
 
 type();
 
-// Skills
 const skills = [
     { icon: "fab fa-html5", name: "HTML5" },
     { icon: "fab fa-css3-alt", name: "CSS3" },
@@ -45,7 +44,6 @@ const skills = [
     { icon: "fas fa-code", name: "Web Design" }
 ];
 
-// Projects
 const projects = [
     {
         img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600",
@@ -62,6 +60,14 @@ const projects = [
         tags: ["HTML", "CSS", "JavaScript", "Responsive"],
         details: "A professional dental clinic website with dark mode, animated counters, FAQ accordion, price list, Google Maps integration, and WhatsApp floating button.",
         link: "https://nadasobhy367-art.github.io/dental-clinic"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600",
+        title: "PowerZone Gym",
+        desc: "Complete gym website with membership plans, trainer profiles, BMI calculator and class schedule.",
+        tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+        details: "A fully responsive gym landing page with membership pricing, trainer profiles, BMI calculator, weekly class schedule, FAQ section and dark theme.",
+        link: "https://nadasobhy367-art.github.io/gym-template"
     }
 ];
 
@@ -85,7 +91,6 @@ document.getElementById('projects-grid').innerHTML = projects.map((p, i) => `
     </div>
 `).join('');
 
-// Modal
 function openModal(index) {
     const p = projects[index];
     document.getElementById('modal-img').src = p.img;
@@ -104,7 +109,6 @@ document.getElementById('modal').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) e.currentTarget.classList.remove('open');
 });
 
-// Scroll Reveal
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -113,7 +117,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Counter
 function animateCounter(el) {
     const target = +el.dataset.target;
     const step = target / 50;
@@ -140,7 +143,6 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
-// Navbar
 window.addEventListener('scroll', () => {
     document.querySelector('.navbar').style.boxShadow =
         window.scrollY > 50 ? '0 5px 30px rgba(0,0,0,0.5)' : 'none';
@@ -152,14 +154,12 @@ document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('open');
 });
 
-// Contact Form
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Message sent successfully! I will get back to you soon ✅');
     e.target.reset();
 });
 
-// Particles
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
