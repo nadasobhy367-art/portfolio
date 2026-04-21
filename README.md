@@ -68,7 +68,5 @@ git clone https://github.com/nadasobhy367-art/portfolio.git
 
 ---
 
-Made with ❤️ by Nada Sobhy © 2026
-
 
 Made with ❤️ by Nada Sobhy © 2026
