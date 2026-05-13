@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nada Sobhy | Frontend Developer & Cybersecurity Engineer</title>
+    <title>Nada Sobhy | Frontend Developer for Business Websites</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <meta name="description" content="Portfolio of Nada Sobhy, a frontend developer building responsive landing pages and business websites for restaurants, clinics, gyms, and growing local brands.">
+    <meta name="keywords" content="Freelance Frontend Developer, Landing Page, Business Website, Responsive Web Design, Portfolio, Arabic RTL, Egypt">
+    <meta name="author" content="Nada Sobhy">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nada Sobhy | Frontend Developer for Business Websites">
+    <meta name="twitter:description" content="Responsive websites and landing pages for restaurants, clinics, gyms, and growing small businesses.">
+    <meta name="twitter:image" content="https://nadasobhy367-art.github.io/portfolio/images/profile.jpg">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nada Sobhy | Frontend Developer for Business Websites">
+    <meta property="og:description" content="Responsive websites and landing pages for restaurants, clinics, gyms, and growing small businesses.">
+    <meta property="og:image" content="https://nadasobhy367-art.github.io/portfolio/images/profile.jpg">
+    <meta property="og:url" content="https://nadasobhy367-art.github.io/portfolio">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://nadasobhy367-art.github.io/portfolio">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas id="particles"></canvas>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <canvas id="particles" aria-hidden="true"></canvas>
     <div class="progress-bar"></div>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="logo">&lt;Nada Sobhy /&gt;</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <a href="Nada_Sobhy_CV.docx" download class="cv-download-btn"><i class="fas fa-download"></i> Download CV</a>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fas fa-bars"></i></button>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"><i class="fas fa-moon"></i></button>
     </nav>
 
+    <main id="main-content">
     <section class="hero" id="home">
         <div class="hero-content">
             <p class="hello">Hello, World! 👋</p>
             <h1>I'm <span class="name">Nada Sobhy</span></h1>
-            <h2 class="typing-text">
+            <h2 class="typing-text" aria-live="polite">
                 <span id="typed"></span><span class="cursor">|</span>
             </h2>
-            <p class="hero-desc">Electronics & Communication Engineering Student at Al-Azhar University, passionate about Cybersecurity and Frontend Development.</p>
+            <p class="hero-desc">I design and build business websites that help restaurants, clinics, gyms, and local brands present themselves clearly and attract more customer inquiries.</p>
+            <p class="hero-note">Available for freelance projects in Arabic and English.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="#contact" class="btn-secondary">Hire Me</a>
+                <a href="mailto:nadasobhy367@gmail.com?subject=Freelance%20Project%20Inquiry" class="btn-secondary">Email Me</a>
+            </div>
+            <div class="hero-metrics" aria-label="Quick highlights">
+                <div class="hero-metric">
+                    <strong>10+</strong>
+                    <span>selected projects</span>
+                </div>
+                <div class="hero-metric">
+                    <strong>RTL</strong>
+                    <span>Arabic-ready interfaces</span>
+                </div>
+                <div class="hero-metric">
+                    <strong>Freelance</strong>
+                    <span>open for new work</span>
+                </div>
             </div>
         </div>
         <div class="hero-image">
@@ -47,10 +83,10 @@
                 </div>
                 <div class="code-body">
                     <p><span class="code-keyword">const</span> <span class="code-var">nada</span> = {</p>
-                    <p>&nbsp;&nbsp;<span class="code-key">role:</span> <span class="code-string">"Engineer"</span>,</p>
-                    <p>&nbsp;&nbsp;<span class="code-key">focus:</span> <span class="code-string">"Cybersecurity"</span>,</p>
-                    <p>&nbsp;&nbsp;<span class="code-key">skills:</span> [<span class="code-string">"Frontend"</span>, <span class="code-string">"AI"</span>],</p>
-                    <p>&nbsp;&nbsp;<span class="code-key">status:</span> <span class="code-string">"Available 🚀"</span></p>
+                    <p>&nbsp;&nbsp;<span class="code-key">role:</span> <span class="code-string">"Frontend Developer"</span>,</p>
+                    <p>&nbsp;&nbsp;<span class="code-key">services:</span> [<span class="code-string">"Landing Pages"</span>, <span class="code-string">"Business Websites"</span>],</p>
+                    <p>&nbsp;&nbsp;<span class="code-key">specialties:</span> [<span class="code-string">"Responsive UI"</span>, <span class="code-string">"RTL Support"</span>],</p>
+                    <p>&nbsp;&nbsp;<span class="code-key">status:</span> <span class="code-string">"Open for freelance"</span></p>
                     <p>}</p>
                 </div>
             </div>
@@ -60,33 +96,65 @@
     <section class="about" id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
+            <div class="about-image">
+                <div class="profile-frame">
+                    <img src="images/profile.jpg" alt="Portrait of Nada Sobhy" class="profile-img" loading="lazy">
+                    <div class="profile-badge">Frontend + RTL UI</div>
+                </div>
+            </div>
             <div class="about-text">
-                <p>I'm a <strong>Electronics & Communication Engineering</strong> student at Al-Azhar University, specializing in <strong>Cybersecurity</strong> with hands-on training at ITI.</p>
-                <p>I build professional web solutions and leverage AI tools to deliver real value to businesses. Currently available for freelance projects.</p>
+                <p>I'm a <strong>frontend developer</strong> and Electronics & Communication Engineering student at Al-Azhar University, with hands-on ITI training in cybersecurity.</p>
+                <p>I help small businesses launch polished websites that feel professional, work smoothly on mobile, and make it easier for customers to trust the brand and get in touch.</p>
                 <div class="about-info">
                     <div class="info-item"><i class="fas fa-graduation-cap"></i><span>Al-Azhar University</span></div>
-                    <div class="info-item"><i class="fas fa-shield-alt"></i><span>Cybersecurity Trainee @ ITI</span></div>
+                    <div class="info-item"><i class="fas fa-code"></i><span>Freelance Frontend Developer</span></div>
                     <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Zagazig, Egypt</span></div>
-                    <div class="info-item"><i class="fas fa-circle green-dot"></i><span>Available for Freelance</span></div>
+                    <div class="info-item"><i class="fas fa-circle green-dot"></i><span>Available for Freelance Projects</span></div>
                 </div>
             </div>
             <div class="about-stats">
                 <div class="stat-card">
-                    <h3 class="counter" data-target="2">0</h3>
-                    <p>Projects Completed</p>
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Projects Delivered</p>
                 </div>
                 <div class="stat-card">
-                    <h3 class="counter" data-target="6">0</h3>
-                    <p>Templates Available</p>
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Core Services Offered</p>
                 </div>
                 <div class="stat-card">
-                    <h3>ITI</h3>
-                    <p>Certified</p>
+                    <h3>RTL</h3>
+                    <p>Arabic-Friendly UI</p>
                 </div>
                 <div class="stat-card">
-                    <h3>500+</h3>
-                    <p>LinkedIn Connections</p>
+                    <h3>Fast</h3>
+                    <p>Responsive Delivery</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i class="fas fa-window-maximize"></i>
+                <h3>Landing Pages</h3>
+                <p>Focused one-page websites for products, campaigns, restaurants, and service offers that need a clear message and strong call to action.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Business Websites</h3>
+                <p>Professional multi-section websites for clinics, gyms, shops, and local brands that need a stronger online presence.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Layouts designed to stay clear, balanced, and easy to use across mobile, tablet, and desktop screens.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-language"></i>
+                <h3>Arabic & English UI</h3>
+                <p>Arabic-friendly and bilingual interfaces with clean RTL structure and consistent visual hierarchy.</p>
             </div>
         </div>
     </section>
@@ -98,7 +166,11 @@
 
     <section class="projects" id="projects">
         <h2 class="section-title">My Projects</h2>
+        <p class="section-lead">A selection of website projects built for business-focused niches, with attention to structure, responsiveness, and visual clarity.</p>
         <div class="projects-grid" id="projects-grid"></div>
+        <div class="projects-actions">
+            <button type="button" class="btn-secondary projects-toggle" id="projects-toggle" hidden>View More</button>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -106,40 +178,46 @@
         <div class="contact-grid">
             <div class="contact-info">
                 <h3>Let's Work Together!</h3>
-                <p>I'm currently available for freelance projects. Whether you need a landing page, website, or have a project in mind, feel free to reach out!</p>
+                <p>I'm currently available for freelance projects. If you need a landing page, a business website, or a visual refresh for your brand, send me the details and I'll get back to you with the right next step.</p>
                 <div class="contact-links">
                     <a href="mailto:nadasobhy367@gmail.com"><i class="fas fa-envelope"></i> nadasobhy367@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/nadasobhy" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
-                    <a href="https://github.com/nadasobhy367-art" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a>
+                    <a href="https://www.linkedin.com/in/nadasobhy" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    <a href="https://github.com/nadasobhy367-art" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub Profile</a>
                 </div>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
+            <form class="contact-form" id="contact-form">
+                <label class="sr-only" for="contact-name">Your Name</label>
+                <label class="sr-only" for="contact-email">Your Email</label>
+                <label class="sr-only" for="contact-message">Tell me about your project</label>
+                <input id="contact-name" type="text" name="name" placeholder="Your Name" autocomplete="name" aria-label="Your Name" required>
+                <input id="contact-email" type="email" name="email" placeholder="Your Email" autocomplete="email" aria-label="Your Email" required>
+                <textarea id="contact-message" name="message" placeholder="Tell me about your project" aria-label="Tell me about your project" required></textarea>
+                <button type="submit" class="btn-primary">Send Project Inquiry</button>
             </form>
         </div>
     </section>
 
-    <div class="modal" id="modal">
-        <span class="modal-close" id="modal-close"><i class="fas fa-times"></i></span>
-        <div class="modal-content">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close project details"><i class="fas fa-times"></i></button>
+        <div class="modal-content" tabindex="-1">
             <img id="modal-img" src="" alt="" class="modal-img">
             <div class="modal-info">
                 <h3 id="modal-title"></h3>
                 <p id="modal-desc"></p>
                 <div id="modal-tags" class="project-tags"></div>
-                <a id="modal-link" href="#" target="_blank" class="btn-primary" style="display:inline-block;margin-top:20px;">View Live Project →</a>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-block;margin-top:20px;">View Live Project →</a>
             </div>
         </div>
     </div>
 
+    <button class="back-to-top" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    </main>
+
     <footer>
         <p>Designed & Built by <span>Nada Sobhy</span> 💙</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/nadasobhy" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/nadasobhy367-art" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nadasobhy" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/nadasobhy367-art" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
             <a href="mailto:nadasobhy367@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
